@@ -35,7 +35,7 @@ public class User {
         return userService.findById(id);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public String deleteUser(@PathVariable Integer id){
         return userService.deleteUser(id);
     }
